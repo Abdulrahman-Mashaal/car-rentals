@@ -13,13 +13,11 @@ body {
 }
 
 /* start header section settings */
-#header,
-#filter {
+.section {
   width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 600px;
-  border: 2px solid red;
+  height: 100vh;
 }
 
 #header {
@@ -31,7 +29,7 @@ body {
 }
 
 #filter {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* start navbar settings */
@@ -40,7 +38,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0px;
-  border: 1px solid rgb(0, 128, 11);
 }
 
 #nav_link {
@@ -54,8 +51,107 @@ a {
   font-size: 0.75rem;
   font-weight: bold;
   text-decoration: none;
-  color: #c3bebe;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 /* end header section settings */
+
+.clear {
+  clear: both;
+}
+
+.header_content {
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.text {
+  width: 60%;
+  position: absolute;
+  left: 0;
+  color: #c3bebe;
+  padding: 130px 10px 130px;
+}
+
+.data {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  border: thin solid #3c4355;
+  background-color: rgba(94, 94, 129, 0.2);
+  color: #c3bebe;
+  padding: 20px 30px;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 15px;
+  margin-top: 30px;
+}
+
+caption {
+  text-align: left;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f3f0f9;
+  text-transform: capitalize;
+}
+
+.select,
+input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+#button {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f9ddce;
+  background-color: #f9b700;
+  border: none;
+}
+
+#button:hover {
+  color: #000000;
+  background-color: #f9b700;
+}
+
+.text h1,
+.text h5,
+.text p {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 10px 40px;
+  color: #f9ddce;
+  text-transform: uppercase;
+  background-color: #f9b700;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #000000;
+  background-color: #f9b700;
+}

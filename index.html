@@ -10,10 +10,10 @@
     <title>Car Rentals</title>
 </head>
 <body>
-    <!-- header section -->
-    <div id="header">
+    <!-- first section -->
+    <div class="section" id="header">
         <!-- just for adding transparent filter above back ground image -->
-        <div id="filter">
+        <div class="section" id="filter">
             <!-- nav bar div -->
             <div id="navbar">
                 <img src="Images/logo.png" alt="logo image" title="logo image">
@@ -27,12 +27,84 @@
                     <a href="#">contact</a>
                     <a href="#">pages</a>
                 </div>
-                <div style="clear: both;"></div>
+                <div class="clear"></div>
             </div>
-            
+            <!-- content division for section number 1 -->
+            <div class="header_content">
+                <div class="text">
+                    <h5>the roal essence of journey</h5>
+                    <h1>relaxed journey ever</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi corrupti error doloremque et impedit aut.</p>
+                    <button>rent car now</button>
+                </div>
+                <!-- form to fill data for section number 2-->
+                <div class="data">
+                    <form action="xyt.php" method="POST">
+                        <table>
+                            <caption>book your car today!</caption>
+                            <tr>
+                                <td colspan="2">
+                                    <select name="selectcar" class="select">
+                                        <option value="1">one</option>
+                                        <option value="1">two</option>
+                                        <option value="1">three</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="Pickup" class="select">
+                                        <option value="1">one</option>
+                                        <option value="1">two</option>
+                                        <option value="1">three</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" placeholder="Date & time"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="Drop off" class="select">
+                                        <option value="1">one</option>
+                                        <option value="1">two</option>
+                                        <option value="1">three</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" placeholder="Date & time"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" placeholder="Your name"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" placeholder="Email address"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" placeholder="Phone number"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="button" id="button" value="CONFIRM CAR BOOKING"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- content sections -->
+    <!-- second sections -->
+    <div class="section">
+        <!-- just for adding transparent filter above back ground image -->
+        <div>
+            <h2>What Services we offer to our clients</h2>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+        </div>
+        <div>
+            <div>
+                <img src="/Images/icons/ico1.jpg" alt="icon1" title="icon1">
+                <h3>expert technicians</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, blanditiis. Ut atque voluptates repudiandae ex magnam laudantium. Exercitationem, nobis minus?</p>
+            </div>
+        </div>
+    </div>
+
     <!-- footer section -->
 </body>
 </html>
