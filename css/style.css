@@ -155,3 +155,53 @@ button:hover {
   color: #000000;
   background-color: #f9b700;
 }
+
+/* start services section */
+
+#secondsection {
+  background-color: #ffffff;
+}
+
+.textcenteralization {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.textcenteralization h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.textcenteralization h5 {
+  font-size: 1rem;
+  color: #abafbd;
+}
+
+.services {
+  float: left;
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+  background-color: #ededf7;
+  padding: 25px 20px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.services img {
+  float: left;
+}
+
+.services h3 {
+  float: left;
+  margin-left: 10px;
+}
+.services p {
+  margin-top: 20px;
+  text-align: justify;
+  color: #abafbd;
+}
+
+#servicescard {
+  position: relative;
+}
