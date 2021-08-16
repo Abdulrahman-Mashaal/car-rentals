@@ -6,6 +6,8 @@
 
 html {
   font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -17,7 +19,7 @@ body {
   width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #header {
@@ -28,25 +30,26 @@ body {
   background-position: center;
 }
 
-#filter {
+#header #filter {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* start navbar settings */
-#navbar {
+#header #navbar,
+.header_content {
   width: 1050px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0px;
 }
 
-#nav_link {
+#header #nav_link {
   float: right;
   margin-top: 5px;
   margin-right: 10px;
 }
 
-a {
+#header a {
   padding-right: 10px;
   font-size: 0.75rem;
   font-weight: bold;
@@ -61,38 +64,29 @@ a {
   clear: both;
 }
 
-.header_content {
-  width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-
-.text {
+#header #filter .text {
   width: 60%;
-  position: absolute;
-  left: 0;
+  float: left;
   color: #c3bebe;
   padding: 130px 10px 130px;
 }
 
-.data {
+#header #filter .data {
   width: 40%;
-  position: absolute;
-  right: 0;
+  float: left;
   border: thin solid #3c4355;
   background-color: rgba(94, 94, 129, 0.2);
   color: #c3bebe;
   padding: 20px 30px;
 }
-table {
+#header #filter table {
   width: 100%;
   table-layout: fixed;
   border-spacing: 15px;
   margin-top: 30px;
 }
 
-caption {
+#header #filter caption {
   text-align: left;
   margin-bottom: 5px;
   padding-left: 15px;
@@ -102,44 +96,46 @@ caption {
   text-transform: capitalize;
 }
 
-.select,
+#header #filter .select,
 input {
   width: 100%;
   padding: 10px 10px;
   border-radius: 5px;
+  color: #767676;
 }
 
-#button {
+#header #filter #button {
   font-size: 1rem;
   font-weight: 600;
   color: #f9ddce;
   background-color: #f9b700;
   border: none;
+  cursor: pointer;
 }
 
-#button:hover {
+#header #filter #button:hover {
   color: #000000;
   background-color: #f9b700;
 }
 
-.text h1,
+#header #filter .text h1,
 .text h5,
 .text p {
   color: #ffffff;
   margin-bottom: 30px;
 }
 
-.text h1 {
+#header #filter .text h1 {
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-.text h5 {
+#header #filter .text h5 {
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-button {
+#header #filter button {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 40px;
@@ -151,34 +147,34 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#header #filter button:hover {
   color: #000000;
   background-color: #f9b700;
 }
 
-/* start services section */
+/* start section number two */
 
 #secondsection {
   background-color: #ffffff;
 }
 
-.textcenteralization {
+#secondsection .textcenteralization {
   text-align: center;
   padding-top: 20px;
   margin-bottom: 50px;
 }
 
-.textcenteralization h2 {
+#secondsection .textcenteralization h2 {
   margin-bottom: 10px;
   font-size: 2rem;
 }
 
-.textcenteralization h5 {
+#secondsection .textcenteralization h5 {
   font-size: 1rem;
   color: #abafbd;
 }
 
-.services {
+#secondsection .services {
   float: left;
   width: 30%;
   border: none;
@@ -188,20 +184,93 @@ button:hover {
   margin-top: 30px;
   margin-left: 30px;
 }
-.services img {
+#secondsection .services img {
   float: left;
 }
 
-.services h3 {
+#secondsection .services h3 {
   float: left;
   margin-left: 10px;
 }
-.services p {
+#secondsection .services p {
   margin-top: 20px;
   text-align: justify;
   color: #abafbd;
 }
 
-#servicescard {
-  position: relative;
+/* end section number two */
+
+/* start section number three*/
+#thirdsection {
+  background-color: #ffffff;
+  padding-top: 30px;
+  vertical-align: middle;
+}
+
+#thirdsection .header_content {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 70px 0px;
+}
+
+#thirdsection .data {
+  width: 55%;
+  float: left;
+  background-color: #ffffff;
+  color: #c3bebe;
+  object-fit: contain;
+}
+
+#thirdsection .data img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#thirdsection .text {
+  width: 45%;
+  float: left;
+  color: #c3bebe;
+  padding-left: 50px;
+  padding-right: 10px;
+  padding-top: 70px;
+}
+
+#thirdsection .text h1,
+.text h5,
+.text p {
+  color: #16142d;
+  margin-bottom: 20px;
+}
+
+#thirdsection .text p {
+  color: #918bb7;
+  text-align: justify;
+}
+
+#thirdsection .text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+#thirdsection .text h5 {
+  font-size: 1rem;
+}
+
+#thirdsection button {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 10px 40px;
+  color: #f9ddce;
+  text-transform: uppercase;
+  background-color: #f9b700;
+  border: none;
+  cursor: pointer;
+}
+
+#thirdsection button:hover {
+  color: #000000;
+  background-color: #f9b700;
 }
