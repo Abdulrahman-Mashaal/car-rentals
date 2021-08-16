@@ -158,18 +158,24 @@ input {
   background-color: #ffffff;
 }
 
-#secondsection .textcenteralization {
+#secondsection .textcenteralization,
+#fourthsection .textcenteralization,
+#fifthsection .textcenteralization {
   text-align: center;
   padding-top: 20px;
   margin-bottom: 50px;
 }
 
-#secondsection .textcenteralization h2 {
+#secondsection .textcenteralization h2,
+#fourthsection .textcenteralization h2,
+#fifthsection .textcenteralization h2 {
   margin-bottom: 10px;
   font-size: 2rem;
 }
 
-#secondsection .textcenteralization h5 {
+#secondsection .textcenteralization h5,
+#fourthsection .textcenteralization h5,
+#fifthsection .textcenteralization h5 {
   font-size: 1rem;
   color: #abafbd;
 }
@@ -201,20 +207,31 @@ input {
 /* end section number two */
 
 /* start section number three*/
-#thirdsection {
+#thirdsection,
+#fourthsection {
   background-color: #ffffff;
   padding-top: 30px;
-  vertical-align: middle;
+  border: 2px solid red;
 }
 
-#thirdsection .header_content {
+#thirdsection .header_content,
+#fourthsection .header_content {
   width: 1140px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#thirdsection .header_content {
   padding: 70px 0px;
 }
 
-#thirdsection .data {
+#fourthsection .header_content {
+  padding-top: 0;
+  border: 2px solid red;
+}
+
+#thirdsection .data,
+#fourthsection .data {
   width: 55%;
   float: left;
   background-color: #ffffff;
@@ -222,43 +239,69 @@ input {
   object-fit: contain;
 }
 
-#thirdsection .data img {
+#thirdsection .data {
+  padding-left: 20px;
+}
+
+#fourthsection .data {
+  padding-right: 50px;
+}
+
+#thirdsection .data img,
+#fourthsection .data img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-#thirdsection .text {
+#thirdsection .text,
+#fourthsection .text {
   width: 45%;
   float: left;
   color: #c3bebe;
+}
+
+#thirdsection .text {
   padding-left: 50px;
-  padding-right: 10px;
+  padding-right: 20px;
+  padding-top: 70px;
+}
+
+#fourthsection .text {
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 70px;
 }
 
 #thirdsection .text h1,
+.text h5,
+.text p,
+#fourthsection .text h1,
 .text h5,
 .text p {
   color: #16142d;
   margin-bottom: 20px;
 }
 
-#thirdsection .text p {
+#thirdsection .text p,
+#fourthsection .text p {
   color: #918bb7;
   text-align: justify;
 }
 
-#thirdsection .text h1 {
+#thirdsection .text h1,
+#fourthsection .text h1 {
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: capitalize;
 }
-#thirdsection .text h5 {
+#thirdsection .text h5,
+#fourthsection .text h5 {
   font-size: 1rem;
 }
 
-#thirdsection button {
+#thirdsection button,
+#fourthsection button {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 20px;
@@ -270,7 +313,43 @@ input {
   cursor: pointer;
 }
 
-#thirdsection button:hover {
+#fourthsection button {
+  background-color: #222222;
+}
+
+#thirdsection button:hover,
+#fourthsection button:hover {
   color: #000000;
   background-color: #f9b700;
+}
+
+#fourthsection .header_content .text {
+}
+
+#fourthsection .text h5 {
+  float: left;
+}
+
+#fourthsection .text h1 {
+  float: right;
+  line-height: 1px;
+  color: #f9b700;
+}
+
+#fourthsection .text small {
+  float: right;
+  line-height: 1px;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+#fourthsection .text ul {
+  list-style-type: none;
+  color: #918bb7;
+}
+
+#fifthsection .header_content {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
 }
