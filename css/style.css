@@ -71,7 +71,7 @@ body {
   padding: 130px 10px 130px;
 }
 
-#header #filter .data {
+#header .data {
   width: 40%;
   float: left;
   border: thin solid #3c4355;
@@ -79,14 +79,14 @@ body {
   color: #c3bebe;
   padding: 20px 30px;
 }
-#header #filter table {
+#header table {
   width: 100%;
   table-layout: fixed;
   border-spacing: 15px;
   margin-top: 30px;
 }
 
-#header #filter caption {
+#header caption {
   text-align: left;
   margin-bottom: 5px;
   padding-left: 15px;
@@ -96,7 +96,7 @@ body {
   text-transform: capitalize;
 }
 
-#header #filter .select,
+#header .select,
 input {
   width: 100%;
   padding: 10px 10px;
@@ -104,7 +104,7 @@ input {
   color: #767676;
 }
 
-#header #filter #button {
+#header #button {
   font-size: 1rem;
   font-weight: 600;
   color: #f9ddce;
@@ -113,29 +113,29 @@ input {
   cursor: pointer;
 }
 
-#header #filter #button:hover {
+#header #button:hover {
   color: #000000;
   background-color: #f9b700;
 }
 
-#header #filter .text h1,
+#header .text h1,
 .text h5,
 .text p {
   color: #ffffff;
   margin-bottom: 30px;
 }
 
-#header #filter .text h1 {
+#header .text h1 {
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-#header #filter .text h5 {
+#header .text h5 {
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-#header #filter button {
+#header button {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 40px;
@@ -147,7 +147,7 @@ input {
   cursor: pointer;
 }
 
-#header #filter button:hover {
+#header button:hover {
   color: #000000;
   background-color: #f9b700;
 }
@@ -160,7 +160,19 @@ input {
 
 #secondsection .textcenteralization,
 #fourthsection .textcenteralization,
-#fifthsection .textcenteralization {
+#fifthsection .textcenteralization,
+#sixthsection .textcenteralization {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+#secondsection .textcenteralization,
+#fourthsection .textcenteralization,
+#sixthsection .textcenteralization {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-top: 20px;
   margin-bottom: 50px;
@@ -168,14 +180,14 @@ input {
 
 #secondsection .textcenteralization h2,
 #fourthsection .textcenteralization h2,
-#fifthsection .textcenteralization h2 {
+#sixthsection .textcenteralization h2 {
   margin-bottom: 10px;
   font-size: 2rem;
 }
 
 #secondsection .textcenteralization h5,
 #fourthsection .textcenteralization h5,
-#fifthsection .textcenteralization h5 {
+#sixthsection .textcenteralization h5 {
   font-size: 1rem;
   color: #abafbd;
 }
@@ -274,11 +286,11 @@ input {
 }
 
 #thirdsection .text h1,
-.text h5,
-.text p,
+#thirdsection .text h5,
+#thirdsection .text p,
 #fourthsection .text h1,
-.text h5,
-.text p {
+#fourthsection .text h5,
+#fourthsection .text p {
   color: #16142d;
   margin-bottom: 20px;
 }
@@ -323,9 +335,6 @@ input {
   background-color: #f9b700;
 }
 
-#fourthsection .header_content .text {
-}
-
 #fourthsection .text h5 {
   float: left;
 }
@@ -348,8 +357,143 @@ input {
   color: #918bb7;
 }
 
-#fifthsection .header_content {
-  width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
+#fifthsection {
+  background-image: url('../Images/callaction-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 20vh;
+}
+
+#fifthsection .section {
+  min-height: 20vh;
+}
+
+#fifthsection #filter2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid red;
+}
+
+#fifthsection .section .textcenteralization {
+  padding: 20px 0;
+  margin: 70px 0;
+  border: 2px solid red;
+}
+
+#fifthsection .section .textcenteralization h2 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #fffffb;
+  text-transform: capitalize;
+}
+
+#fifthsection .section .textcenteralization h5 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #fffffb;
+}
+
+#fifthsection button {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 30px;
+  padding: 10px 40px;
+  color: #f9b700;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: thin solid #f9b700;
+  cursor: pointer;
+}
+
+#fifthsection button:hover {
+  color: #000000;
+  background-color: #f9b700;
+}
+
+#sixthsection {
+  background-color: #ffffff;
+  border: 2px solid red;
+  padding-top: 20px;
+}
+
+#sixthsection #socialcard {
+  margin-left: 40px;
+  border: 2px solid red;
+  margin-top: 100px;
+}
+
+#sixthsection .services {
+  width: 20%;
+  float: left;
+  border: none;
+  border-radius: 0px;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 2px solid rgb(0, 255, 0);
+}
+
+#sixthsection .services:first-child {
+  margin-left: 60px;
+}
+
+#sixthsection .services > img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#sixthsection .services > h3 {
+  width: max-content;
+  font-size: 1rem;
+  background-color: #000000;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  font-family: 'Times New Roman';
+}
+
+#sixthsection .services > h2 {
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+#sixthsection .services > p {
+  color: #abafbd;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+#sixthsection .services #likes {
+  float: left;
+}
+
+#sixthsection .services #likes img {
+  float: left;
+}
+
+#sixthsection .services #likes h3 {
+  float: left;
+  line-height: 100%;
+  color: #abafbd;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+#sixthsection .services #comments {
+  float: right;
+}
+
+#sixthsection .services #comments img {
+  float: left;
+}
+
+#sixthsection .services #comments h3 {
+  float: left;
+  line-height: 100%;
+  color: #abafbd;
+  font-size: 0.75rem;
+  text-transform: capitalize;
 }
