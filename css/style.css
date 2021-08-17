@@ -59,6 +59,12 @@ body {
   text-transform: uppercase;
 }
 
+#header a:hover {
+  border-bottom: 2px solid #f9b700;
+  font-size: 1rem;
+  padding: 0;
+}
+
 /* end header section settings */
 
 .clear {
@@ -66,14 +72,14 @@ body {
 }
 
 #header #filter .text {
-  width: 60%;
+  width: 65%;
   float: left;
   color: #c3bebe;
   padding: 130px 10px 130px;
 }
 
 #header .data {
-  width: 40%;
+  width: 35%;
   float: left;
   border: thin solid #3c4355;
   background-color: rgba(94, 94, 129, 0.2);
@@ -362,11 +368,11 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 20vh;
 }
 
+#fifthsection,
 #fifthsection .section {
-  min-height: 20vh;
+  min-height: 50vh;
 }
 
 #fifthsection #filter2 {
@@ -374,8 +380,8 @@ input {
 }
 
 #fifthsection .section .textcenteralization {
-  padding: 20px 0;
-  margin: 70px 0;
+  padding: 80px 0;
+  margin: 0px 0;
 }
 
 #fifthsection .section .textcenteralization h2 {
@@ -394,7 +400,7 @@ input {
 #fifthsection button {
   font-size: 1rem;
   font-weight: 600;
-  margin: 30px;
+  margin-top: 30px;
   padding: 10px 40px;
   color: #f9b700;
   text-transform: uppercase;
